@@ -1,0 +1,42 @@
+<script type="text/javascript">
+	let a={
+		fname:'shivani',
+		lname:'kushwah',
+		age:21,
+		email:'helloshivi123@gmail.com',
+
+		favmovies:['dhoom','shoolay','hum'],//object array
+
+		//ek or object ke andr object//
+		living:{
+
+			city:'gwalior',
+			country:'India'
+		},
+
+		salary :function(){  //function
+			return 25000;
+
+		},
+		fullname :function(){
+			fname ="ram"
+			//return this.fname + " " + this.lname;  //(var a ke liye this use)
+			//return this.fname
+			return this.fname;
+			//return this.fname
+		}
+	}// end object//
+
+	document.write(a);
+	//document.write(a.fname);
+	//document.write(a.favMovies[1]);
+	//document.write(a.salary());
+	//document.write(a.fullname());
+	//document.write(a.living.city);
+	//document.write(a.living.country);
+	document.write(JSON.stringify(a))//object ko string me krne k liye json.stringify
+
+
+	console.log(a);
+	//console.log(a.age);
+</script>
